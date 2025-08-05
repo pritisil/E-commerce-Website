@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { reviewdata } from "../export";
+import { reviewdata } from "./export";
 
 const Reviews = () => {
   const settings = {

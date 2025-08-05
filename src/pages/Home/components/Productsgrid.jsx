@@ -3,7 +3,7 @@ import { FaStar, FaRegHeart } from "react-icons/fa";
 import { MdOutlineRemoveRedEye, MdAddShoppingCart } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { products } from "../export";
+import { products } from "./export";
 
 const Productsgrid = () => {
   useEffect(() => {

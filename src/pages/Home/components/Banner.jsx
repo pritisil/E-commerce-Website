@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import deal from '../assets/deal-bg.jpg'
+import deal from '../../../assets/deal-bg.jpg'
 import "aos/dist/aos.css";
 import AOS from "aos";
 
