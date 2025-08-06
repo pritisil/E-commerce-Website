@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const PrivateLayout = () => {
-  return (
-    <div>
-      PrivateLayout
-    </div>
-  )
-}
+const PrivateLayout = ({ children }) => {
+  return <>{children}</>;
+};
 
-export default PrivateLayout
+export default PrivateLayout;

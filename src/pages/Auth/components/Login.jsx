@@ -1,35 +1,25 @@
 import React, { useState } from "react";
 
-const Signup = () => {
-  const [name, setName] = useState("");
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Signup submitted:", { name, email, password });
+    console.log("Login submitted:", { email, password });
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-700 to-yellow-400">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
         <h2 className="text-3xl font-bold mb-6 text-center text-purple-700">
-          Create an Account
+          Welcome Back
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:outline-none"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
             <input
               type="email"
               name="email"
@@ -40,7 +30,9 @@ const Signup = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Password</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Password
+            </label>
             <input
               type="password"
               name="password"
@@ -54,13 +46,16 @@ const Signup = () => {
             type="submit"
             className="w-full bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-4 rounded-md transition duration-200"
           >
-            Sign Up
+            Log In
           </button>
         </form>
         <p className="text-center text-sm text-gray-600 mt-4">
-          Already have an account?{" "}
-          <a href="/login" className="text-purple-700 hover:underline font-medium">
-            Log in
+          Don't have an account?{" "}
+          <a
+            href="/signup"
+            className="text-purple-700 hover:underline font-medium"
+          >
+            Sign up
           </a>
         </p>
       </div>
@@ -68,4 +63,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
