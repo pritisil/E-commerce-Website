@@ -2,6 +2,8 @@ import HomePage from "../pages/Home/HomePage";
 // import LoginPage from "../pages/Auth/LoginPage";
 // import DashboardPage from "../pages/Dashboard/DashboardPage";
 import DashboardPage from "../pages/Dashboard/DashboardPage";
+import SignUp from "../pages/Auth_Pages/SignUp";
+import Login from "../pages/Auth_Pages/Login";
 
 
 export const publicRoutes = [
@@ -12,6 +14,14 @@ export const publicRoutes = [
   {
     path: "/",
     element: <HomePage />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />
+  },
+  {
+    path: "/login",
+    element: <Login />
   },
 ];
 
