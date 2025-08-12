@@ -4,7 +4,7 @@ import PrivateLayout from "../layouts/PrivateLayout";
 
 const PrivateRoute = () => {
   //   const { isAuthenticated } = useAuth();
-  const isAuthenticated = true;
+  const isAuthenticated = false;
 
   return isAuthenticated ? (
     <PrivateLayout>

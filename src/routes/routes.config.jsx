@@ -2,15 +2,11 @@ import HomePage from "../pages/Home/HomePage";
 // import LoginPage from "../pages/Auth/LoginPage";
 // import DashboardPage from "../pages/Dashboard/DashboardPage";
 import DashboardPage from "../pages/Dashboard/DashboardPage";
-import SignupPage from "../pages/Auth/SignUpPage";
+import SignupPage from "../pages/Auth/SignupPage";
 import LoginPage from "../pages/Auth/LoginPage";
 
 
 export const publicRoutes = [
-  //   {
-  //     path: "/login",
-  //     element: <LoginPage />,
-  //   },
   {
     path: "/",
     element: <HomePage />,
